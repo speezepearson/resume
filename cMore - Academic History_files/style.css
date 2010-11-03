@@ -1,0 +1,813 @@
+#container {
+	width:1000px;
+}
+
+#container_content {
+	width:1000px;
+}
+
+/* header */
+#top_line1 {
+  float:left;
+  margin: 0; 
+  padding: 0;
+  position:relative;
+  border-top: 2px #800 solid;
+  border-bottom: 1px #666 solid;
+  border-right: 1px #666 solid;
+  width: 166px;
+  height: 9px;
+}
+
+#top_line2_home {
+  float:left;
+  margin: 0; 
+  padding: 0;
+  position: relative;
+  border-top: 2px #800 solid;
+  border-bottom: 1px #666 solid;
+  width: 66%; 
+  height: 9px;
+}
+
+#top_line2 {
+  float:left;
+  margin: 0; 
+  padding: 0;
+  position: relative;
+  border-top: 2px #800 solid;
+  border-bottom: 1px #666 solid;
+  width: 80%; 
+  height: 9px;
+}
+
+#logo { 
+	position: relative;
+	float: right;
+	text-align: right;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+/* sidebar */
+#navigation {
+	position: relative;
+	clear: both;
+}
+
+#sidebar { 
+	float: left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 166px; 
+	clear: both;
+}
+
+#logo img { 
+	padding: 0; 
+	margin: 0; 
+}
+
+#indexlinks {
+	position: relative;
+	text-align: right;
+	margin-right: 5px;
+	padding-top: 7px;
+	font-size: small;
+	margin-left: 0;
+}
+#indexlinks a, link {
+	text-decoration: underline;
+	}
+#indexlinks a:visited {
+	text-decoration: underline;
+	}
+	
+#indexlinks ul {
+	margin-top: 0;
+}
+	
+#indexlinks ul li {
+	list-style-type: none;
+	text-align: right;
+	padding-bottom: 5px;
+	}
+	
+#content {
+	float: left;
+	border-left: 1px #666 solid;
+	min-height:400px;
+	padding-left:10px;
+	padding-bottom: 15px;
+	width: 78%;
+}
+
+#newsbar {
+	width: 190px;
+	float:left;
+	margin-left: 5px;
+}
+
+#newsbreak {
+	float: left;
+	margin: 0 0 0 28px;
+	padding-top: 0px;
+}
+
+#whatsnew {
+	width: 165px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+	
+#loginblock {
+	float: left;
+	width: 400px;
+	padding-left: 5px;
+	padding-top: 5px;
+	/*font-size: 1.1em;*/
+	border-left: 1px #666 solid;
+}
+
+#menucontainer {
+	float: left;
+	width: 750px;
+	margin-left: 5px;
+	padding-top: 5px;
+	/*font-size: 1.1em;*/
+}
+
+#leftmenu {
+	float: left;
+	margin: 0 25px 0 30px;
+	width: 300px;
+}
+
+#rightmenu {
+	float: left;
+	width: 320px;
+}
+
+#leftmenu a:link, #rightmenu a:link {
+	color:#0000ff; 
+	text-decoration: none;
+}
+
+#leftmenu a:visited, #rightmenu a:visited {
+	color:#0000ff; 
+	text-decoration: none; 
+}
+
+#leftmenu a:hover, #rightmenu a:hover {
+	color:#0000ff;
+	text-decoration: underline; 
+}
+
+/* footer */
+
+#footer {
+	float: left;
+	padding-right: 30px;
+	margin-top: 0;
+	clear: both;
+	font-size: x-small;
+	width: 100%;
+}
+
+#footer a, link {
+	text-decoration: underline;
+	}
+#footer a:visited {
+	text-decoration: underline;
+	}
+	
+#footerlogin {
+	clear: both;
+	margin-left:6px;
+	width: 820px;
+}
+
+#footerlogin p {
+	font-size: x-small;
+	margin-top: 3px;
+	}
+	
+#footer ul {
+	margin-left: 0;
+	padding-left: 0;
+	margin-bottom: 3px;
+}
+
+.footerlinks li {
+	display: inline;
+	list-style-type: disc;
+	padding-left: 0px;
+	margin-left:0;
+	font-size: small;
+}
+
+.logout_message {
+	font-size: small;
+	}
+#localfooter {
+	float: left;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	width: 100%;
+}
+#localfooter a, link {
+	text-decoration: underline;
+	}
+#localfooter a:visited {
+	text-decoration: underline;
+	}
+	
+/* body */
+
+body {  
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+#loginform {
+	border: 1px solid #666666;
+	padding: 5px;
+	margin: 12px 3px 0 3px;
+}
+
+/* Various Styles */
+
+td, p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+.bold {
+	font-weight: bold;
+	}
+table.form {
+	margin-left: 15px;
+	}
+
+a:link {
+	color:#0000ff; 
+	text-decoration: underline;
+}
+
+a:visited {
+	color:#0000ff; 
+	text-decoration: underline; 
+}
+
+a:hover {
+	color:#0000ff;
+	text-decoration: none; 
+}
+/* menu lists for main menu */
+.menulist1 ul {
+	margin: 0;
+	padding-top: 0;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+.menulist1 ul li a {
+	text-decoration: none;
+	}
+/* menu list for inside menu pages */
+ul#menulist2 {
+	margin: 0;
+	}
+ul#menulist2 li {
+	margin-bottom: 7px;
+}
+ul#menulist2 li a {
+	text-decoration: none;
+	font-weight: bold;
+	}
+ul#menulist2 li a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	}
+ul#menulist2 li a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+	}
+.line { 
+	border-top: 1px solid #cccccc;
+	font-size: 1px;
+}
+		
+.line2 { 
+	border-top: 1px solid #000000;
+	font-size: 1px;
+}
+
+.line3 {
+	border-top: 2px solid #999999;
+	font-size: 1px;
+}
+
+#line3, #line4 {
+	border-top: 1px solid #666666;
+	font-size: 1px;
+	margin:0px 0px 20px 0px;
+}
+
+.login { 
+	margin: 2px; 
+	padding: 2px 2px 2px 36px; 
+	border: 1px #666666 solid; 
+}		
+
+.highlight {
+	background-color: yellow;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.inline {
+	display: inline;
+}
+
+.indent_left {
+	margin-left: 25px;
+}
+
+.right {
+	text-align: right;
+}
+
+.clear {
+	clear: both;
+}
+		
+/*.inset { 
+	margin: 5px 5px 5px 5px;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+	color: #000000;
+}
+
+.bigtitle {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:large; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+.medtitle {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: medium; 
+	font-weight: bold; 
+	color: #000000;
+}
+	*/
+.medtitlegrey {
+	font-size:medium;
+	font-weight: bold;
+	color: #666666;
+}
+
+.smallgray {   
+	font-size: 1em; 
+	font-weight: bold; 
+	color: #666666;
+}
+
+.grayedout {
+	color: #666666;
+}
+
+/*.smallcallouts {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: small; 
+	font-weight: normal; 
+	color: #000000;
+}
+
+.smallercallouts {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: normal; 
+	color: #000000;
+}*/
+
+h1 {
+	font-size: x-large; 
+	font-weight: bold; 
+}
+
+h2 {   
+	font-size:1.3em; 
+	font-weight: bold; 
+	margin-bottom: 2px;
+	margin-top: 7px;
+}
+
+h2#title {
+	border-bottom: 2px solid #000000;
+	margin-top: 3px;
+	}
+
+h3, .smalltitle {  
+	font-size: small; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+h4, .smallertitle {   
+	font-size: 8pt; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+/* light gray comments */
+
+.comment {  
+	font-size: 9pt;
+	color: #777777; 
+	}
+
+/*.footer {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: normal; 
+	color: #000000;
+	}*/
+	
+/* from jrock */
+
+.error   { 	
+	border-color: #c99;
+	color: #fff;
+	background-color: #c00;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	padding: 5px;
+	font-size: small;
+	margin: 10px 0 10px 0;
+}
+
+.alert {
+	color: #ff0000;
+	font-weight: bold;
+	}
+
+.message { 	
+	border-color: #9c9;
+	color: #060;
+	background-color: #E2F9E3;
+	text-align: left;
+	border: 1px solid #ccc;
+	padding: 5px 5px 5px 30px;
+	font-size: 14px;
+	margin: 0 auto 12px auto;
+	margin-right: 7px;
+}
+
+/* for the race_ethnicity page */
+
+.savebutton { 
+	margin: 2px; 
+	display: block;
+}
+
+.current_races li { 
+	border-bottom: 1px gray dashed; 
+	display: block;
+}
+
+/* end from jrock */
+
+.confirm {
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #cc0000;
+	border: 1px solid #000000;
+	padding: 4px;
+	text-align: center;
+	}
+
+/*.smallwarns {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-weight: normal; 
+	color: #CC0000;
+	}
+
+.smallbold {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: small; 
+	font-weight: bold; 
+	color: #000000;
+	}
+
+.smallwhite {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: small; 
+	font-weight: normal; 
+	color: #FFFFFF;	*/
+	}
+/* Confirmation */
+
+ul.confirm_alert {
+	margin: 0;
+}
+ul.confirm_alert li {
+	margin-bottom: 20px;
+	}
+	
+dl#confirmation {
+	margin: 10px 0 10px 0;
+	}
+	
+dl#confirmation dd {
+	margin-bottom: 15px;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+table#confirm_race {
+	background-color: #eeeeee;
+	}
+	
+/* student acct access pg */
+
+div#top_info {
+	width: 100%;
+	clear: both;
+	margin-top: 5px;
+	padding-bottom: 10px;
+	}
+	
+div#left_table {
+	padding: 5px;
+	width: 60%;
+	float: left;
+	}
+
+div#right_table {
+	position: relative;
+	float: left;
+	padding: 5px;
+	/*width: 20%;*/
+	border: 2px solid #666666;
+	}
+div#bottom_table, .schedule {
+	width: 100%;
+	clear: both;
+	padding-top: 5px;
+	}
+	
+div#bottom_table table tr th, .schedule table tr th {
+	font-weight: bold;
+	background-color: #d3d3d3;
+	text-align: center;
+	font-size: x-small;
+	}
+
+div#bottom_table table tr td, .schedule table tr td {
+	font-size: x-small;
+	}
+
+.schedule td.term {
+	font-size: small;
+	}
+
+div#bursar_links {
+	font-size: small;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	}
+
+/* what's new bullets */
+
+ul.whatsnew {
+	margin: 0px;
+	padding-left: 9px;
+	margin-right: -3px;
+	}
+	
+ul.whatsnew li {
+	font-size: 11px;
+	margin-left: 7px;
+	}
+
+/* print-related styles */
+
+.notonscreen {
+	display: none;
+	}
+
+/* app2grad styles */
+
+ol#instructions {
+	list-style-type: decimal;
+	padding: 17px;
+	}
+
+ol#instructions li {
+	margin-bottom: 7px;
+	}
+
+.line-dot {
+	border-top: 1px dotted #666666;
+	font-size: 1px;
+	}
+	
+div.convplans {
+	margin-left: 25px;
+	}
+	
+div.confirmblock {
+	margin-left: 35px;
+	margin-top: 5px;
+	}
+	
+th {
+	font-weight: bold;
+	background-color: #eeeeee;
+	text-align: left;
+	font-size: small;
+	}
+th.nobg {
+	background-color: #ffffff;
+	}
+.boldline {
+	border-top: 1px solid #000000;
+	font-size: 1px;
+	}
+	
+div.alert-table {
+	background-color: #eeeeee;
+	border: 2px solid #000000;
+	width: 95%;
+	padding: 5px;
+	text-align: center;
+	}
+	
+.small {
+	font-size: x-small;
+	}
+input.noedit {
+	background-color: #999;
+	}
+/* Majors and Minors styles */
+
+table.mminterest, table.mmofficial {
+	width: 100%;
+	border: 0;
+	}
+table.mm_nowidth {
+	border: 0;
+	}
+	
+table.mminterest th, table.mmofficial th, table.mm_nowidth th {
+	border-bottom: 2px solid #000000;
+	}
+	
+table.mminterest td, table.mmofficial td, table.mm_nowidth td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	}
+
+tr.choose td {
+	padding-top: 10px;
+	border-top: 1px dotted #cccccc;
+	}
+
+ul.actions {
+	margin: 0;
+	padding: 0;
+	}
+	
+ul.actions li {
+	margin: 0 5px 8px 8px;
+	padding: 0px;
+	list-style-type: none;
+	}
+
+.spaced {
+	margin: 0 5px -2px 0;
+	}
+/* for hiding options dropdown */
+div#hiddenSpecialization {
+	margin: 0px 20px 0px 20px;
+	display: none;
+	}
+
+/* student account access alternating row color styles */
+
+.oddrow {
+	background-color: #eeeeee;
+}
+
+.evenrow {
+	background-color: #ffffff;
+    }
+ 
+/* basic info */
+
+.insurance {
+	background-color: #eeeeee;
+	padding: 3px;
+	width: 500px;
+	text-align: center;
+	margin-bottom: 7px;
+}
+
+/* fieldset, forms */
+
+fieldset {
+	padding: 5px;
+	margin: 20px 5px;
+}
+
+fieldset legend {
+	font-weight: bold;
+}
+
+fieldset.strongbox {
+	background-color: #e2e2e2;
+}
+
+/* tally size on course schedule for MED */
+.schedule table tr td#tally {
+	font-size: 1.2em;
+	font-weight: strong;
+}
+
+/*---------------------
+
+
+/* Styles for the list widget */
+
+/*<![CDATA[*/
+
+
+
+div.list-widget {
+float:left;
+}
+
+div.list-widget ul {
+	margin: 0;
+	padding:0;
+}
+
+div.list-widget ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0px 0;
+	float:left;
+	letter-spacing: 0.5 em;
+	padding-left: 7px;
+	
+}
+
+div.list-widget ul li div.event-date {
+	/*font-size: 96%;11px at medium*/
+	color: #000;
+	text-align: left;
+	margin: 0;
+	padding: 8px 0 0px 0px;
+	float: left;
+	width: 100px;
+ 	line-height: 14px;
+	letter-spacing: 0.5 em;
+}
+
+div.list-widget ul li div.event-summary {
+	/*font-size: 96%;*/
+	margin: 0;
+	padding: 0 0 8px 0px;
+	float:left;
+	width: 150px;
+	line-height: 14px;
+	letter-spacing: 0.5 em;
+	/*font-weight: bold;*/
+}
+
+
+div.list-widget a:link, div.list-widget a:visited, div.list-widget a:active { 
+	text-decoration: underline; 
+	color: #0000ff; 
+	}
+
+div.list-widget a:hover { 
+	text-decoration: none; 
+	color: #0000ff; }
+
+/*]]>*/
