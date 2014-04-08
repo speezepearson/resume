@@ -20,14 +20,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[11pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{enumitem}
 \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 
-\setlength{\textwidth}{5.5in} % Text width of the document
+\setlength{\textwidth}{5.9in}{\textheight} % Text width of the document
+%\setlength{\textheight}{11.0in} % Text width of the document
 
 
 \begin{document}
@@ -46,32 +47,64 @@
 %\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
 %----------------------------------------------------------------------------------------
 \begin{resume}
+\section{Experience} 
 
-\section{Independent Developer} 
+{\sl 2013-Present: Independent Developer }
+\begin{itemize} 
+    \item Main Project: Powershame (http://powershame.com)
+        \begin{itemize}
+            \item Productivity tool: Sends timelapses of your screen to friends
+            \item Backend: Flask webapp (user-facing site and RESTful API)
+            \item Asynchronous rendering via rabbitmq
+            \item Scalable EC2/S3 architecture, managed with Ansible
+            \item Cross-platform desktop client (wxwidgets)
+        \end{itemize}
+    \end{itemize}
+\sl{Democratic National Committee} 
+        \begin{itemize}
+            \item 2011-2012: Linux System Administrator (team of two w/ Leo Zhadanovsky)
+            \item 2013: Lead Linux System Administrator
+            \item Responsible for deploying and maintaining all major DNC architecture during 2012 Election Cycle
+            \item Managed 200+ physical servers, mostly CentOS, including:
+                \begin{itemize}
+                    \item Vertica cluster
+                    \item Hadoop cluster
+                    \item High-availability web servers (Apache and Nginx) supporting multiple application servers and configurations
+                    \item Load balancers (BigIP)
+                    \item MySQL, Postgres, and Mongo DBs
+                    \item Postgres mail servers
+                    \item SAS and iSCSI RAID storage arrays
+                    \item Xen and VMWare clusters
+                    \item Secure network infrastrucutre implementing multiple VLANs, and high-availability (redundant) firewalls and routers, and minimum-permission configurations
+                    \item Installed and maintained all hardware on-site and at colo
+                \end{itemize}
+            \item Extensize AWS utilization, including but not limited to:
+                \begin{itemize}
+                    \item Multiple services hosted on EC2, scaled via Cloudwatch
+                    \item S3 for static assets and one-off static sites
+                    \item RDS for backend persistance
+                    \item SES for high-volume mail sends
+                    \item Route 53 for DNS
+                    \item IAM for least-access delegation
+                \end{itemize}
+            \item Designed hardware and/or cloud solutions on a per-problem basis
+            \item Automated deployments using Jenkins, Puppet, shell scripts, and git hooks
+                \begin{itemize}
+                    \item Deployed projects include: CallTool, GottaRegister, Narwal
+                \end{itemize}
+            \item Customized backup and restoration system for servers and DBs
+            \item Built tracking tool to create nightly, browsable snapshots of third-party websites
+            \item Implemented 800+ nagios checks, including custom checks
+            \item 24/7 on-call responsiveness for all Nagios and Pingdom checks
+        \end{itemize}
 
-{\sl 2013-Present: Developing productivity tool Powershame  } \\
-{\sl http://powershame.com } \\
-{Powershame: Precommit to productivity, notify your friends, automatically send a timelapse of your desktop after}\\
-{Building a RESTful API, backend architecture, and multiplatform desktop client} \\
-\section{Democratic National Committee} 
 
-{\sl 2011-2013: Linux Systems Administrator} \\
-{\sl 2013: Lead Linux Systems Administrator} \\
-Deployed, administered hundreds of servers, databases, networking appliances \\
-Built and maintained scalable infrastructure on AWS \\
-On-call 24/7 \\
-Coordinated with OFA to build and maintain systems, including:
-\begin{itemize} \item Narwhal, Call Tool, and GottaRegister \end{itemize}
-\vspace{-4mm}
-Built and deployed systems for Summer Organizers, Democrats Abroad, and others \\
-Built custom tools for research\\
-
-
-\vspace{-2mm}
-\section{Appliance Builders Wholesalers} 
-
-{\sl 2008-2010: Chief Technology Officer} \\ 
-All IT-related responsibilites for a small company of 50+ users in 4 locations
+\newpage
+\sl{Appliance Builders Wholesalers} 
+    \begin{itemize} 
+        {\sl 2008-2010: Chief Technology Officer} \\ 
+        All IT-related responsibilites for a small company of 50+ users in 4 locations
+    \end{itemize}
 
 \section{Research}
 {\sl 2007: University of Chicago, Speech Synthesis for Tonal Language} \\
@@ -82,7 +115,6 @@ All IT-related responsibilites for a small company of 50+ users in 4 locations
 {\sl Python}: 8 years experience \\
 {\sl Misc Languages}: Various experience with C, C++, Java, Lisp/Scheme \\
 {\sl DBs}: MySQL, Postgres, Vertica, Mongo \\
-{\sl Networking}: Extensive experience managing level 2 and 3 networks, hardware \\
 Extensive experience with AWS
 
 %----------------------------------------------------------------------------------------
@@ -91,9 +123,7 @@ Extensive experience with AWS
 
 \section{Education}
 
-{\sl University of Chicago, 2009} \\
-Computer Science \\
-Focus on Artificial Intelligence and Machine Learning
+{\sl University of Chicago, 2009}, Computer Science, Focus on Artificial Intelligence and Machine Learning
  
 %----------------------------------------------------------------------------------------
 %	EXTRA-CURRICULAR ACTIVITIES SECTION
@@ -105,7 +135,6 @@ Focus on Artificial Intelligence and Machine Learning
 {\it Google Codejam 2010, top 2000 worldwide} \\
 {\it http://github.com/jaibot } \\
 {\it University of Chicago ACM, 2006-2009} \\
-{\it ICPC University of Chicago 2007, team "Works in Theory"}
 
 
 %----------------------------------------------------------------------------------------
