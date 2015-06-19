@@ -280,7 +280,7 @@
 \newskip\sectionskip
 \newdimen\resumewidth
 
-\resumewidth=6.5in
+\resumewidth=7.0in
 \sectionskip=2.5ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
@@ -288,7 +288,6 @@
 		     \textwidth=\resumewidth
 		     \advance\textwidth-\sectionwidth
 		     \hsize=\textwidth
-		     \hoffset=\sectionwidth
 }
 
 

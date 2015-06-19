@@ -20,14 +20,14 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[line]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{enumitem}
 \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 
-\setlength{\textwidth}{5.9in}
+%\setlength{\textwidth}{6.3in}
 %\setlength{\textheight}{11.0in} % Text width of the document
 
 
@@ -36,87 +36,60 @@
 %----------------------------------------------------------------------------------------
 %	NAME AND ADDRESS SECTION
 %----------------------------------------------------------------------------------------
-
-\moveleft.999\hoffset\leftline{\large\bf Jai Dhyani}  
-\moveleft.9\hoffset\leftline{jai@jaibot.com}
-\moveleft.9\hoffset\leftline{http://jaibot.com}
-\vspace{-14mm}
-\moveright.1\hoffset\rightline{1400 Irving St NW, 323}
-\moveright.1\hoffset\rightline{Washington, DC 20010}
-\moveright.1\hoffset\rightline{609 948 4264}
+\name{Jai Dhyani}
+\address{jai@jaibot.com - http://jaibot.com - 609 948 4264}
 %\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
 %----------------------------------------------------------------------------------------
 \begin{resume}
-\section{Experience} 
+\section{Career and Projects} 
 
-{\sl 2013-Present: Independent Developer }
+{\sl 2014-Present: AWS System Engineer (jai@)}
     \begin{itemize} 
-        \item Main Project: Powershame (http://powershame.com)
-        \begin{itemize}
-            \item Productivity tool: Sends timelapses of your screen to friends
-            \item Backend: Flask webapp (user-facing site and RESTful API)
-            \item Asynchronous rendering via rabbitmq
-            \item Scalable EC2/S3 architecture, managed with Ansible
-            \item Cross-platform desktop client (wxwidgets)
-        \end{itemize}
-    \item http://timelock.me - Timed RSA key publication API
+        \item Maintained and improved automation framework for system-level network testing
+        \item Worked with testers to automate existing tests
+        \item Trained network QAs in development (git, Python, Amazon ecosystem)
+        \item Built libraries and CLI tools to streamline testing and implement network-lab-as-a-service
+        \item Ported lab network infrastructure to new lab management platform
+        \item Implemented monitoring for network lab
     \end{itemize}
-{\sl Democratic National Committee} 
+
+{\sl 2013-2014: Independent Developer }
+    \begin{itemize} 
+        \item Powershame: Precommit to doing work, record timelapse from your desktop, upload it, and send it to your friends to prove you weren't slacking off. Implemented with Flask (site and RESTful API), ffmpeg (rendering), rabbitmq (asynchronous communication between renderer and site), EC2/S3 architecture, cross-platform desktop client, deployments managed with Ansible.
+    \item Timelock - Timed RSA key publication API
+    \item UpdateYourPasswords - one-stop shop for updating passwords and activating two-factor authentication 
+    \end{itemize}
+
+
+    {\sl 2011-2013: Democratic National Committee Linux Systems Enginner (2013: Lead)}
         \begin{itemize}
-            \item 2011-2012: Linux System Administrator (team of two w/ Leo Zhadanovsky)
-            \item 2013: Lead Linux System Administrator
-            \item Responsible for deploying and maintaining all major DNC architecture during 2012 Election Cycle
-            \item Installation, Administration, and Monitoring for 200+ Physical Servers, including:
-                \begin{itemize}
-                    \item Vertica cluster
-                    \item Hadoop cluster
-                    \item High-availability web servers (Apache and Nginx)
-                    \item Web application servers (Java frameworks and Ruby on Rails)
-                    \item Load balancers (BigIP and ELB)
-                    \item MySQL, Postgres, and Mongo DBs
-                    \item Mail servers
-                    \item High-availability storage arrays in the 1TB-1PB range
-                    \item Xen and VMWare clusters
-                    \item Secure network infrastructure implementing multiple VLANs, high-availability (redundant) firewalls and routers, custom traffic shaping and filtering, and minimum-permission configurations
-                \end{itemize}
-            \item Extensive AWS utilization, including but not limited to:
-                \begin{itemize}
-                    \item Multiple services hosted on EC2, scaled via Cloudwatch
-                    \item S3 for static assets and one-off static sites
-                    \item RDS for backend persistence
-                    \item SES for high-volume mail sends
-                    \item Route 53 for DNS
-                    \item IAM for least-access delegation
-                \end{itemize}
-            \item Designed hardware and/or cloud solutions on a per-problem basis
+            \item Installation, administration, and monitoring for hundreds of servers and applications, including: Vertica clusters for big data analysis, hadoop clusters, web servers (Apache, Nginx), multiple application servers, load balancers, Postgres, MySQL, Mongo DBs, mail servers, high-availability large storage arrays (1TB-1PB range), Xen clusters, VMWare clusters, secure network infrastructure across multiple locations and VLANs, redunandant HA firewalls and routers
+            \item Extensive AWS utilization (including EC2, Cloudwatch, S3, RDS, SES, Route 53, IAM)
             \item Automated deployments using Jenkins, Puppet, shell scripts, and git hooks
                 \begin{itemize}
                     \item Deployed projects include: Narwal, CallTool, GottaRegister, http://democrats.org, \\Democrats Abroad, Vote From Abroad, and the DNC online store
                 \end{itemize}
             \item Customized backup and restoration system for servers and DBs
-            \item Built tracking tool to create nightly, browsable snapshots of third-party websites
-            \item Implemented 800+ nagios checks, including custom checks
-            \item 24/7 on-call responsiveness for all Nagios and Pingdom checks
-            \item Implemented PCI compliance
+            \item Built tracking tool to create nightly, browsable snapshots of websites
+            \item 24/7 on-call responsiveness for 800+ monitored metrics, including some custom-built (mostly Nagios)
         \end{itemize}
 
 
-{\sl Appliance Builders Wholesalers} 
+{\sl 2008-2010: Appliance Builders Wholesalers Chief Technology Officer} 
     \begin{itemize} 
-        \item {\sl 2008-2010: Chief Technology Officer}
         \item All IT-related responsibilities for a small company of 50+ users in 4 locations
     \end{itemize}
 
-\section{Research}
-{\sl 2007: University of Chicago, Speech Synthesis for Tonal Language} \\
-{\sl 2006: Rutgers DIMACS, Support Vector Machines and Seizure Prediction}
+{\sl 2006-2007: Undergraduate Research}
+    \begin{itemize} 
+        \item University of Chicago, Speech Synthesis for Tonal Language (2007)
+        \item Undergraduate Research: Rutgers DIMACS, Support Vector Machines and Seizure Prediction (2006)
+    \end{itemize}
 
 \section{Skills}
-{\sl Linux}: 10 years experience deploying and maintaining servers (CentOS, Debian)\\
-{\sl Python}: 8 years experience \\
-{\sl Misc Languages}: Various experience with C, C++, Java, Lisp/Scheme \\
-{\sl DBs}: MySQL, Postgres, Vertica, Mongo \\
-Extensive experience with AWS
+{\sl Linux}: 10+ years experience deploying and maintaining servers (CentOS/RHEL and Debian/Ubuntu)\\
+{\sl Python}: 10+ years experience, including web development (Flask, SQLAlchemy, boto), automation (Fabric), testing (pytest), NLP (NLTK), Math/Data/Analysis (Numpy, SciPy, IPython Notebook) \\
+{\sl Misc Languages}: Various experience with Javascript, C, C++, Java, with occasional dabbling in other languages (Rust, Go, Nim, Scheme, Julia, Clojure...)
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -124,24 +97,9 @@ Extensive experience with AWS
 
 \section{Education}
 
-{\sl University of Chicago, 2009}
-\begin{itemize}
-    \item Computer Science
-    \item Focus on Artificial Intelligence and Machine Learning
-\end{itemize}
+{\sl University of Chicago, 2009: BA in Computer Science, focus on Artificial Intelligence and Machine Learning}
  
-%----------------------------------------------------------------------------------------
-%	EXTRA-CURRICULAR ACTIVITIES SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Hobbies and Misc} 
-
-{Project Euler} \\
-{Google Codejam 2010, top 2000 worldwide} \\
-{http://github.com/jaibot } \\
-{University of Chicago ACM, 2006-2009} \\
-
-\hspace{-30mm}
+\hspace{-10mm}
 The most current version of this resume may be found at https://github.com/jaibot/resume/raw/master/resume.pdf
 %----------------------------------------------------------------------------------------
 \end{resume}
