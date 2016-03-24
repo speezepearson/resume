@@ -92,26 +92,27 @@ Concentration: Artificial Intelligence
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Side Projects} 
+\section{Projects} 
 \subsection{Powershame (inactive)}
-\location{Full-Stack Web Site, API, and Desktop Client}
-Built social application to produce and share time-lapse videos of desktop\\
-\href{http://github.com/jaibot/powershame-site}{github: jaibot/powershame-site} \\
-\href{http://github.com/jaibot/powershame-client}{github: jaibot/powershame-client} \\
-\href{http://github.com/jaibot/powershame-renderer}{github: jaibot/powershame-renderer} \\
-
+\location{Shame Yourself Into Productivity By Automatically Sending Timelapse Videos of Your Work to Friends}
+\textbf{Site/API}: Python \textbullet{} Flask \textbullet{} 
+AWS S3, EC2, IAM \textbullet{}  jQuery \textbullet{} Bootstrap 
+\textbullet{} Ansible \textbullet{} PostgreSQL \\
+\textbf{Client}: Python \textbullet{} wxWidgets \textbullet{} boto \\
+\textbf{Renderer}: Python \textbullet{} RabbitMQ \textbullet{} ffmpeg \\
+github: powershame-\{site|client|renderer\}
 \sectionsep
 
 \subsection{UpdateYourPasswords}
-Built single-page tool to update \\
-passwords and two-Factor authentication
+\location{Single-page tool to update passwords and 2FAs}
+jQuery \textbullet{} bootstrap\\
 \href{http://jaibot.github.io/updateyourpasswords}{jaibot.github.io/updateyourpasswords}
 
 \sectionsep
 
 \subsection{TimeLock (inactive)}
-Built webapp to generate RSA keypairs and schedule publication of the private \\
-key \\
+\location{Generate RSA keypairs; Schedule Release of Private Keys}
+Flask \textbullet{} PyCrypto \\
 \href{http://github.com/jaibot/timelock}{github: jaibot/timelock}
 
 \sectionsep
@@ -120,25 +121,25 @@ key \\
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Skills}
-\subsection{Programming}
-Python: Pandas, Numpy, Sklearn, NLTK, Flask, Pytest \\
-\sectionsep
-R \textbullet{} Bash \textbullet{} SQL \textbullet{} 
-\LaTeX \textbullet{} git \\ 
-\sectionsep
-Familiar: C \textbullet{} C++ \textbullet{} Java \textbullet{} Javascript 
-\textbullet{} Ruby \textbullet{} Clojure
+%\section{Skills}
+%\subsection{Programming}
+%Python: Pandas, Numpy, Sklearn, NLTK, Flask, Pytest \\
+%\sectionsep
+%R \textbullet{} Bash \textbullet{} SQL \textbullet{} 
+%\LaTeX \textbullet{} git \\ 
+%\sectionsep
+%Familiar: C \textbullet{} C++ \textbullet{} Java \textbullet{} Javascript 
+%\textbullet{} Ruby \textbullet{} Clojure
 
-\sectionsep
+%\sectionsep
 
-\subsection{Systems}
-Linux (Debian and Redhat families) \textbullet{} 
-Relational Databases (PostgreSQL, MySQL) \textbullet{}
-NoSQL (Mongo) \textbullet{} Networking (L2, L3) 
-\textbullet{} AWS \textbullet{} Docker
+%\subsection{Systems}
+%Linux (Debian and Redhat families) \textbullet{} 
+%Relational Databases (PostgreSQL, MySQL) \textbullet{}
+%NoSQL (Mongo) \textbullet{} Networking (L2, L3) 
+%\textbullet{} AWS \textbullet{} Docker
 
-\sectionsep
+%\sectionsep
 
 
 \section{Awards}
@@ -148,7 +149,20 @@ Top 3000 Worldwide \\
 \sectionsep
 \subsection{Putnam Exam}
 \location{2006}
-Top Putnam Exam score at McDaniel College \\
+Duren Prize for Top Putnam Exam \\
+score at McDaniel College
+
+\sectionsep
+
+\section{Activities} 
+\textbf{UChicago ACM Treasurer | 2007-2010} \\
+Revived then-defunct ACM; Organized Meetups, Lectures, 
+Hackathons, and Programming Competitions \\
+\sectionsep
+\textbf{Seattle Effective Altruism | 2014-Present}\\
+Helped grow  from dozens to hundreds of members; 
+Gave and Organized Talks, Meetups. Led largest annual 
+community event in 2014 and 2015. \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,21 +185,22 @@ Top Putnam Exam score at McDaniel College \\
 \location{2014 - 2015: Systems Engineer II}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Automated AWS's network testing pipeline, drastically reducing test time, increasing
-reliability and replication, and ensuring that AWS and amazon.com continue to scale
-with demand.
-\item Mentored coworkers in Python, pytest, and git to enable rapid conversion of manual to automated tests
-\item Built custom tools to automate management of niche hardware, including industrial traffic generators, L1 switches, and bleeding-edge network hardware not yet available to the public
-\item Developed AWS Test Region to accurately reflect actual AWS Regions
-\item Increased testing capacity via novel Docker deployment, enabling hardware tests to run concurrently, in isolation, on the same hardware
+\item Reduced testing cycle from \textbf{weeks} to \textbf{hours} by aggressively automating test processes, enabling faster deployments with higher confidence so that AWS and amazon.com can continue to scale under accelerating demand.
+\item Increased reliability and replication of both hardware and software qualification by formalizing, automating, and logging test conditions and outcomes.
+\item Mentored coworkers in Python, pytest, and git to enable rapid conversion of manual to automated tests, saving thousands of engineer-hours.
+\item Built custom tools to automate management of niche hardware, including industrial traffic generators, L1 switches, and bleeding-edge network hardware not yet available to the public, allowing previously time-consuming processes to be automated.
+\item Introduced continious deployment, creating automatic end-to-end pipelines with unit and integration testing for software under test and internal testing infrastructure.
+\item Developed AWS Test Region to more accurately reflect actual AWS Regions.
+\item Increased testing capacity via novel Docker deployment, enabling hardware tests to run concurrently, in isolation, on the same hardware.
 \end{tightemize}
+\sectionsep
 \sectionsep
 
 \runsubsection{Democratic National Committee}
 \descript{}
 \location{2011 - 2013 : Systems Engineer | 2013 : Lead Systems Engineer}
 \begin{tightemize}
-\item Built custom scraping tool to intelligently capture nightly snapshots of web pages and compare differences across time; Used by researchers, debate prep, OFA CTO Harper Reed
+\item Built custom scraping tool to intelligently capture nightly snapshots of web pages and compare differences across time; Used by researchers, debate prep, OFA CTO Harper Reed.
 \item Built, deployed, and proactively responded to thousands of internal metrics, ensuring that voter databases, get-out-the-vote infrastructure, web pages, and more remainied available under rapidly growing traffic, constant deployments, and increasingly frequent attacks.
 \item Revamped backup solution: increased fidelity, decreased execution time 70\% and storage required 60\%.
 \item Performed empirical cost-benefit analysis between different deployment strategies of voter database (NARWAL), saving hundreds of thousands of dollars.
@@ -200,9 +215,10 @@ with demand.
 
 \section{Research}
 
-\runsubsection{Signal Data Science Project (Forthcoming)}
-\descript{| 2016}
-Analyzed every trade ever made on the Intrade Prediction Market to identify
+\sectionsep
+\runsubsection{Intrade Calibration Analysis}
+\descript{| 2016 (Forthcoming)}
+Analyzed every trade ever made on Intrade Prediction Markets to identify
 inefficencies and systemic miscalibration.
 \sectionsep
 
@@ -220,16 +236,6 @@ Investigated Applications of SVMs in Seizure Prediction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS / ACTIVITIES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Activities} 
-\begin{tabular}{rll}
-2007-2010	 & UChicago ACM Treasurer: Revived then-defunct ACM \\
-			 & at UChicago; Organized Meetups, Lectures, \\
-			 & Hackathons, and Programming Competitions \\
-2014-Present & Seattle Effective Altruism: Helped grow \\
-			 & from dozens to hundreds of members; Gave and \\
-			 & Organized Talks, Meetups. Led largest annual \\
-			 & community event in 2014 and 2015. \\
-\end{tabular}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \subsection{ACM}
 % \descript{Treasurer}
