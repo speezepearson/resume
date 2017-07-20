@@ -194,7 +194,7 @@ Duren Prize for top score @ McDaniel
 \location{2011 - 2013 : Systems Engineer | 2013 : Lead Systems Engineer}
 \begin{tightemize}
 \item Built custom scraping tool to intelligently capture nightly snapshots of web pages and compare differences across time; Used by researchers, debate prep, Obama For America CTO Harper Reed.
-\item Built, deployed, and proactively responded to thousands of internal metrics to ensure high availability of voter databases, get-out-the-vote infrastructure, donation infrastructure, and web pages
+\item Built, deployed, and proactively responded to thousands of internal metrics to ensure high availablity of voter databases, get-out-the-vote infrastructure, donation infrastructure, and web pages
 \item Revamped backup solution to increase fidelity, reduce execution time 70\%, reduce storage required 60\%.
 \item Performed empirical cost-benefit analysis between different deployment strategies of voter database (NARWAL), saving hundreds of thousands of dollars.
 \item Deployed and managed Vertica cluster powering the NARWAL voter database.
