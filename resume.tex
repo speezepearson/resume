@@ -17,32 +17,6 @@
 % operating system or comment the line out to use the default font.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \documentclass[]{resume}
@@ -53,190 +27,20 @@
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
-\github
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Spencer Pearson}{ \urlstyle{same}\href{http://speezepearson.github.io }{speezepearson.github.io }\qquad\href{http://github.com/speezepearson}{ github.com/speezepearson }\qquad\href{mailto:suspense@cs.washington.edu}{ suspense@cs.washington.edu}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{header}
 
 \begin{minipage}[t]{0.33\textwidth}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education}
-
-\subsection{U.~Washington}
-\descript{ Master of Science }
-\location{ Computer Science }
-GPA 3.72; 2015--2017 \\
-Concentration: Software Engineering
-\sectionsep
-
-\subsection{UC Santa Barbara}
-\descript{ Bachelor of Science }
-\location{ Physics, Computer Science }
-GPA 3.98; 2010-2015
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     ACTIVITIES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Activities}
-\textbf{Seattle Rationality [Organizer] | 2015-}\\
-{[[}Something something world optimization cognitive biases{]]}
-\sectionsep
-
-\textbf{Seattle Effective Altruism | 2016-}\\
-{[[}Something something world optimization blood of the young{]]}
-\sectionsep
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section{Skills}
-\textbf{Expert in}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Python
-\item Bash
-\item Git
-\end{tightemize}
-\sectionsep
-
-\textbf{Proficient with}
-\begin{tightemize}
-\item Java
-\item C/C++
-\item Ruby (incl. Rails)
-\item JavaScript (incl. jQuery)
-\item Haskell
-\item Racket
-\item Mathematica
-\item SQL
-\end{tightemize}
-\sectionsep
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+  \input{education}
+  \input{activities}
+  \input{skills}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.66\textwidth}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section{Publications}
-
-\runsubsection{Evaluating and Improving Fault Localization} \\
-\location{2015 - 2017}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Led six-person research team over two years
-\item Demonstrated systematic methodological flaw in nearly all existing fault localization research
-\item Developed novel class of automated debugging tools
-\item Won 3rd place in 2016 ACM Student Research Competition, describing the research in a poster and presentation at a conference
-\item {[[}Cited from U.~Texas, U.~Massachusetts{]]}?
-\end{tightemize}
-\sectionsep
-
-
-
-\section{Experience}
-
-\runsubsection{AppFolio}
-\descript{| Software Engineering Intern}
-\location{Summers 2014, 2015}
-\begin{tightemize}
-\item Built a full-stack application enabling custom information sharing and payments between property managers and property owners on the AppFolio platform
-\item Built a new user experience for executing and viewing complex database queries
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Zentopy}
-\descript{| Software Engineering Intern}
-\location{Summer 2013}
-\begin{tightemize}
-\item Iteratively improved a full-stack cloud file storage application,
-\item bar
-\end{tightemize}
-\sectionsep
-
-
-
-\section{Projects}
-
-\runsubsection{BrowserGUI}
-\descript{| Ultra-portable Python GUI library}
-\location{\href{http://github.com/speezepearson/browsergui}{github.com/speezepearson/browsergui }}
-\begin{tightemize}
-\item Runs a GUI in the only frontend every computer has: a browser
-\item Works out-of-the-box on every major OS / Python version
-\item Extensive introduction and documentation
-\item Thoroughly abstracted to maintain the feel of Python, not a wrapper
-\end{tightemize}
-
-\sectionsep
-
-\runsubsection{Panfig}
-\descript{| Tool for figure definitions in Markdown}
-\location{\href{http://github.com/speezepearson/panfig}{github.com/speezepearson/panfig }}
-\begin{tightemize}
-\item Pandoc plugin enabling Markdown files to describe how to generate figures
-\item Removes the need for accompanying scripts and build processes
-\end{tightemize}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS / ACTIVITIES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{ACM}
-% \descript{Treasurer}
-% \location{UChicago}
-% Revived Defunct ACM at UChicago \\
-% Organized Lectures, Hackathons, Competitions \\
-% \sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Publications}
-% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-% \bibliographystyle{abbrv}
-% \bibliography{publications}
-% \nocite{*}
-
+  \input{publications}
+  \input{experience}
+  \input{projects}
 \end{minipage}
+
+
+
 \end{document}  \documentclass[]{article}
