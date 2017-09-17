@@ -1,0 +1,5 @@
+I worked on AppFolio’s reporting system, which lets clients run complex SQL queries and view the results in a browser.
+
+This involved:
+- Writing a completely new front-end, to present the results and allow easy manipulation of them. (CoffeeScript, jQuery)
+- Server-side changes to accommodate the new front-end and integrate it more tightly with the rest of the application. (Ruby, Rails)

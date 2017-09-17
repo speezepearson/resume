@@ -1,0 +1,5 @@
+Lead author on a paper that studied one class of debugging tools ("fault localization" tools), revealed a serious systematic flaw in previous methodology, and explored how to make better fault localization tools once that flaw is fixed.
+
+I led a team of 6 people, made most of the methodological decisions, and implemented and documented most of the software necessary to run the experiments (in a combination of Python, Bash, and Java). My adviser remarked that this is one of the best-documented projects he's seen in academia.
+
+(In more detail: fault localization (FL) tools run a program's test suite, inspect the executions of the failing tests, and try to identify which lines of code are responsible for the failure. However, to evaluate FL tools, people check how well they localize "artificial faults" (created by inserting bugs into correct programs) rather than "real faults" (actual mistakes that actually need to be localized in the real world). We implemented several previously-studied FL tools and evaluated them on both artificial and real faults, and found essentially no correlation between the results.)

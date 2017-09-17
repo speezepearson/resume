@@ -1,0 +1,6 @@
+Tool for figure definitions in Markdown
+
+http://github.com/speezepearson/panfig
+
+- Pandoc plugin, allowing documents to programmatically describe how to generate their figures from scratch
+- Enables standalone text files to compile supporting images without accompanying files/scripts/build processes

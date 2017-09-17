@@ -1,0 +1,5 @@
+Experience: I recently (June 2017) received my MS in computer science from the University of Washington. Before that, I earned degrees in physics and CS from UC Santa Barbara, and interned twice for several months at AppFolio (a SaaS company targeting property managers) doing both front-end (JS, CSS) and back-end (Ruby/Rails) work.
+
+Skills: Python and Bash are, at this point, as natural to me as English; and I'm comfortable with C/C++, Java, JavaScript, Ruby, Haskell, Racket, and Mathematica.
+
+Goals: I enjoy making tools that improve people's lives (especially people like me, i.e. software developers). My proudest accomplishment is a lightweight ultra-portable GUI library for Python (<https://github.com/speezepearson/browsergui>); my second-proudest accomplishment is my master's thesis.

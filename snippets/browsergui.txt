@@ -1,0 +1,8 @@
+Ultra-portable Python GUI library
+
+http://github.com/speezepearson/browsergui
+
+- Runs a GUI in the only frontend every computer has: a browser
+- Works out-of-the-box on every major OS / Python version
+- Extensively documentated
+- Carefully architected to feel like natural Python code, not a thin wrapper around a foreign GUI framework

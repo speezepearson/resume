@@ -1,0 +1,5 @@
+AppFolio hosts a web site used by property managers to administer their businesses (run credit checks, collect rent, maintain client/tenant information…). I worked on both front- and back-ends of a new "owner portal" that allows property owners to communicate with and pay their property managers.
+
+This required:
+- Architecting and writing a new Rails app that can pass information to and from AppFolio’s existing ecosystem. (Ruby, Rails)
+- Building a completely new front-end for the portal, to display documents the property manager has shared and support payments. (JavaScript, ERB, CSS)
