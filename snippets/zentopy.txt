@@ -1,0 +1,3 @@
+Zentopy was a cloud file storage service emphasizing ability to share files over many channels. I wrote:
+- Back-end code to handle incoming HTTP requests and manage customized database-stored filesystems (in Python, using MongoDB).
+- Front-end code to display/modify the files (HTML, CSS, JS, using AngularJS).
