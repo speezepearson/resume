@@ -3,3 +3,17 @@ Experience: I recently (June 2017) received my MS in computer science from the U
 Skills: Python and Bash are, at this point, as natural to me as English; and I'm comfortable with C/C++, Java, JavaScript, Ruby, Haskell, Racket, and Mathematica.
 
 Goals: I enjoy making tools that improve people's lives (especially people like me, i.e. software developers). My proudest accomplishment is a lightweight ultra-portable GUI library for Python (<https://github.com/speezepearson/browsergui>); my second-proudest accomplishment is my master's thesis.
+
+--------------------------
+
+I'm a backend-focused developer with more than ten years' experience developing software in Python, Bash, Ruby, Java, and several more exotic languages, both professionally and for fun. My most interesting accomplishments are:
+- an extremely portable GUI toolkit for Python, using a browser as the front end [1];
+- a Rails app, built from scratch for AppFolio (SaaS, targeting property managers), allowing property owners to communicate with and pay their property managers [2];
+- a Java library for performing "mutation analysis" on Java libraries (i.e. making thousands of tiny random changes to the code and checking which tests change behavior, to help developers find bugs) [3];
+- a data analysis pipeline (primarily Python and Bash, with some R) for analyzing the results of [3].
+
+{{I recently earned a MS in Computer Science from UW, and am aiming to spend November/December productively before starting at Dropbox on January 9.}}
+
+[1] https://github.com/speezepearson/browsergui
+[2] References: my team's lead (jcyoder (at) gmail.com) and senior engineer (justin.force (at) gmail.com).
+[3] References: my adviser (mernst (at) cs.washington.edu) and unofficial mentor (rjust (at) cs.umass.edu). Code at https://bitbucket.org/rjust/fault-localization-data .
