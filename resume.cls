@@ -33,13 +33,13 @@
 \usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
-Last Updated on \today
+\newcommand{\lastupdated}{\begin{textblock}{60}(165,5)
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{6pt}{8pt}\selectfont
+Last updated \today
 \end{textblock}}
 
-\newcommand{\github}{\begin{textblock}{60}(155,9)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
+\newcommand{\github}{\begin{textblock}{60}(165,9)
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{6pt}{8pt}\selectfont
 \href{http://github.com/speezepearson/resume}{github.com/speezepearson/resume }
 \end{textblock}}
 
